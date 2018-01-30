@@ -16,13 +16,12 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board)
-  winning_array = []
   WIN_COMBINATIONS.each do |win_combo|
     if win_combo.all? do |x|
       x == "X"
       win_combo 
     elsif win_combo.all? do |o|
-        o =="O"
+      o == "O"
         win_combo
     else
       false
