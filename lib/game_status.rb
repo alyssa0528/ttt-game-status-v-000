@@ -18,9 +18,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
   winning_arrays.each do |win_combination|
-    if board.all? do |index| == " " || draw?(board)
-      false
   end 
+end
 end
 
 def full?(board)
