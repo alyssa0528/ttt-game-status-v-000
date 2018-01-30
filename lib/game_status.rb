@@ -20,9 +20,11 @@ def won?(board)
     if win_combo.all? do |x|
       x == "X"
       win_combo 
+    end
     elsif win_combo.all? do |o|
       o == "O"
       win_combo
+    end
     else
       false
     end 
