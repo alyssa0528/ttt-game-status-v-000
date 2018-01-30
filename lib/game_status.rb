@@ -22,7 +22,7 @@ def won?(board)
       win_combo 
     elsif win_combo.all? do |o|
       o == "O"
-        win_combo
+      win_combo
     else
       false
     end 
