@@ -16,13 +16,12 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combination|
-    win_combination.each do |winning_array|
-      if (winning_array.include?(board))
-      winning_array
-      else 
-      false 
-      end
+  winning_arrays = WIN_COMBINATIONS[0]
+  winning_arrays.each do |win_combination|
+    if (win_combination.include?(board) && position_taken?(board,index))
+    win_combination
+    else 
+    false 
     end
   end
 end
