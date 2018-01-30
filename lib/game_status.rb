@@ -16,10 +16,10 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board)
-  winning_arrays = WIN_COMBINATIONS[0]
+  WIN_COMBINATIONS.each do |win_combo|
   winning_arrays.each do |win_combination|
-    if position_taken(board, index) == true
-      board[index] == "X" || "O"
+    if board.all == " " || draw?(board)
+      false
   end 
 end
 
