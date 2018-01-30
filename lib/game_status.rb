@@ -21,8 +21,6 @@ def won?(board)
   end
 end
 
-
-
 def full?(board)
   board.all? do |token|
     if (token == "X" || token == "O")
