@@ -48,12 +48,6 @@ def over?(board)
 end
 
 def winner(board)
-  champ = won?(board)
-  if champ.include? == "X"
-    "X"
-  elsif won?(board)[0] == "O"
-    "O"
-  else
-    nil
+  if won?board 
   end
 end
