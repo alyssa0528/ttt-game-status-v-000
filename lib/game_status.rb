@@ -18,7 +18,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   winning_arrays = WIN_COMBINATIONS[0]
   winning_arrays.each do |win_combination|
-end 
+    if position_taken(board, index) == true
+      board[index] == "X" || "O"
+  end 
 end
 
 def full?(board)
