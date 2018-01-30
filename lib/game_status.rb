@@ -19,17 +19,17 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.find do |win_combo|
     binding.pry 
-    if win_combo.all? do |x|
-      x == "X"
-      win_combo 
-    end
-    elsif win_combo.all? do |o|
-      o == "O"
-      win_combo
-    end
-    else
-      false
-    end 
+    # if win_combo.all? do |x|
+     # x == "X"
+    #  win_combo 
+    # end
+    #elsif win_combo.all? do |o|
+     # o == "O"
+      #win_combo
+    #end
+    #else
+     # false
+    #end 
   end
 end
 
