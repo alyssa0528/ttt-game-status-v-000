@@ -48,6 +48,8 @@ def over?(board)
 end
 
 def winner(board)
-  if won?board 
+  if won?(board)
+else 
+  nil
   end
 end
